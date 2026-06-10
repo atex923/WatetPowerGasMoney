@@ -16,7 +16,7 @@ from tkinter import messagebox, ttk
 
 
 APP_TITLE = "水電Gas記帳"
-APP_VERSION = "V0.1.6"
+APP_VERSION = "V0.1.7"
 WINDOW_TITLE = f"{APP_TITLE} {APP_VERSION}"
 PROGRAM_HISTORY = [
     ("V0.1.0", "初版：建立自來水、電力、瓦斯記帳分頁，加入自動儲存、排序、費用圖表與統一發票對獎。"),
@@ -26,6 +26,7 @@ PROGRAM_HISTORY = [
     ("V0.1.4", "計價度數大於去年同期度數時，在前三分頁表格以紅色標示。"),
     ("V0.1.5", "開啟程式時，對獎欄空白或未對獎的記錄會自動重新對獎。"),
     ("V0.1.6", "將程式歷史寫入程式碼，方便從單一檔案追蹤版本變更。"),
+    ("V0.1.7", "整理 GitHub 首頁資料，將最新主程式移到 repo 根目錄。"),
 ]
 DATA_FILE = Path(__file__).with_name("utility_records.json")
 AWARDS_CACHE_FILE = Path(__file__).with_name("invoice_awards_cache.json")
