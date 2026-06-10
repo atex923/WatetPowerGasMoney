@@ -16,8 +16,17 @@ from tkinter import messagebox, ttk
 
 
 APP_TITLE = "水電Gas記帳"
-APP_VERSION = "V0.1.5"
+APP_VERSION = "V0.1.6"
 WINDOW_TITLE = f"{APP_TITLE} {APP_VERSION}"
+PROGRAM_HISTORY = [
+    ("V0.1.0", "初版：建立自來水、電力、瓦斯記帳分頁，加入自動儲存、排序、費用圖表與統一發票對獎。"),
+    ("V0.1.1", "移除視窗內容區主標題，平均度數折線調整到圖表下半部。"),
+    ("V0.1.2", "將總度數調整為計價度數，新增去年同期度數欄位。"),
+    ("V0.1.3", "新增回復上一步功能，支援記錄修改、排序與批次對獎回復。"),
+    ("V0.1.4", "計價度數大於去年同期度數時，在前三分頁表格以紅色標示。"),
+    ("V0.1.5", "開啟程式時，對獎欄空白或未對獎的記錄會自動重新對獎。"),
+    ("V0.1.6", "將程式歷史寫入程式碼，方便從單一檔案追蹤版本變更。"),
+]
 DATA_FILE = Path(__file__).with_name("utility_records.json")
 AWARDS_CACHE_FILE = Path(__file__).with_name("invoice_awards_cache.json")
 MOF_APP_ID = "EINV4201907015417"
