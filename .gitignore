@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local user data and fetched invoice cache.
+outputs/utility_records.json
+outputs/invoice_awards_cache.json
+utility_records.json
+invoice_awards_cache.json
+
+# Scratch workspace files.
+work/
